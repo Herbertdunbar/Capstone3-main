@@ -1,0 +1,6 @@
+textarea.custom-textarea{
+    width: 30%;
+    height: 125px;
+    padding: 1rem;
+    border-radius: 2rem;
+}
