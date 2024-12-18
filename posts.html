@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script src="./js/main.js"></script>
+    <script src="./js/posts.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/posts.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="posts.html">Messages</a>
+            <a href="profile.html">View Profile</a>
+            <a href="signup.html">Sign-Up</a>
+        </nav>
+    </header>
+    <h1>Welcome to Ccubed Comics, Collabs, and Comments where you can find all your comic books needs and wants.</h1>
+    <main>
+        <section id="sortingOptions">
+            <label for="sortMessages">Sort Messages By:</label>
+            <select id="sortMessages">
+                <option value="time">Time (Newest First)</option>
+                <option value="timeAsc">Time (Oldest First)</option>
+                <option value="username">Username (A-Z)</option>
+                <option value="usernameDesc">Username (Z-A)</option>
+            </select>
+        </section>
+
+        <div id="output"></div>
+    </main>
+</body>
+</html>
