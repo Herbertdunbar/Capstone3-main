@@ -10,6 +10,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
             return;
         }
         //SUCCESS
-        window.location.href = "messages.html";
+        window.location.href = "posts.html";
     });//end click
 }); //end loaded
