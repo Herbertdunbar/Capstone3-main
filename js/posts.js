@@ -24,6 +24,8 @@ function getMessage(m) {
         </div>
     `;
 }
+
+
 document.addEventListener("DOMContentLoaded", async () => {
 
     const messages = await getMessageList();

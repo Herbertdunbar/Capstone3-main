@@ -223,3 +223,4 @@ async function deletePost(postId) {
         console.error("Failed to delete post:", response.statusText);
     };
 };
+
