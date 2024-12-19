@@ -28,43 +28,20 @@ body{
     background-size: cover;
 }
   
-  .container {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .glass-table {
-    width: 80%;
-    border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
-    border-radius: 15px;
-    backdrop-filter: blur(10px); /* Blur effect to create frosted glass */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    overflow: hidden;
-  }
-  
-  .glass-table th, .glass-table td {
-    padding: 12px 15px;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
-  }
-  
-  .glass-table th {
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background for header */
-    color: white;
-    font-weight: bold;
-  }
-  
-  .glass-table td {
-    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background for data cells */
-    color: white;
-  }
-  
-  /* Hover effect for table rows */
-  .glass-table tr:hover {
-    background: rgba(255, 255, 255, 0.3);
-  }
+.glass-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+  backdrop-filter: blur(10px); /* Blurs the background behind the navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better contrast */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Keeps the navbar on top */
+}
   
   
