@@ -43,11 +43,11 @@ function getMessage(m) {
     if( like != undefined){
       //found - delete
       await deleteLike(like._id);
-      window.location.href = 'messages.html'; //refresh page
+      window.location.href = 'posts.html'; //refresh page
     }else{
       //not found - create
-      await sendLike(m._id);
-      window.location.href = 'messages.html'; //refresh page
+      await toggleLikes(m._id);
+      window.location.href = 'posts.html'; //refresh page
     }
   });//end click
   

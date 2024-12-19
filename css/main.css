@@ -44,4 +44,12 @@ body{
   z-index: 1000; /* Keeps the navbar on top */
 }
   
-  
+  h1 {
+    color:rgb(139, 46, 0);
+    background-color: rgba(167, 170, 178, 0.46);
+    opacity:90%;
+  }
+
+  span {
+    color: rgb(139, 46, 0);
+  }
