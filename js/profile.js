@@ -27,23 +27,7 @@ function displayUserPosts(posts) {
                 <hr>
             `).join("");
     };
-    document.querySelectorAll(".deletePostBtn").forEach(btn => {
-        btn.addEventListener("click", async (e)=>{
-            const postId = e.target.getAttribute("data-post-id");
-            const confirmed = confirm("Are you sure you want to delete this post?");
-            if(confirmed) {
-                const success = await deletePost(postId);
-                if(success) {
-                    alert("Post deleted successfully.");
-                    location.reload();
-                } else {
-                    alert("Failed to delete the post. Please try again.")
-                };
-            };
-        });
-    });
-};
-
+}
 document.addEventListener("DOMContentLoaded", async () => {
     getLoginStatus();
 

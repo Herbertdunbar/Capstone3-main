@@ -6,18 +6,14 @@ textarea.custom-textarea{
 }
 
 h2 {
-    color:rgb(139, 46, 0);
-    background-color: rgba(167, 170, 178, 0.46);
-    opacity:90%;
+    color:brown;
+    filter: blur(25%);
 }
 div {
-    color:rgb(139, 46, 0);
-    background-color: rgba(167, 170, 178, 0.46);
-    opacity:85%;
+    color:brown;
+ 
 }
 
 p {
-    color:rgb(139, 46, 0);
-    background-color: rgba(167, 170, 178, 0.46);
-    opacity:90%;
+    color: brown;
 }

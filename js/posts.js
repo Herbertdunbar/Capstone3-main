@@ -42,7 +42,7 @@ function getMessage(m) {
     const like = m.likes.find(like=>like.username===localStorage.username);
     if( like != undefined){
       //found - delete
-      await deleteLike(like._id);
+      await toggleLikes(m._id);
       window.location.href = 'posts.html'; //refresh page
     }else{
       //not found - create
@@ -61,3 +61,19 @@ document.addEventListener("DOMContentLoaded", async () => {
   //output.innerHTML = messages.map(getMessage).join("<hr>\n")
   messages.forEach(m => output.appendChild(getMessage(m)));
 });//end load
+
+document.querySelectorAll(".deletePostBtn").forEach(btn => {
+  btn.addEventListener("click", async (e)=>{
+      const postId = e.target.getAttribute("data-post-id");
+      const confirmed = confirm("Are you sure you want to delete this post?");
+      if(confirmed) {
+          const success = await deletePost(postId);
+          if(success) {
+              alert("Post deleted successfully.");
+              location.reload();
+          } else {
+              alert("Failed to delete the post. Please try again.")
+          };
+      };
+  });
+});
